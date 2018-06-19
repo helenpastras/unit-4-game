@@ -6,6 +6,8 @@ var $crystalButton4;
 var $wantedScore;
 var $yourScore;
 var yourScore;
+var wins;
+var loses;
 
 function setButtonValues() {
 }
