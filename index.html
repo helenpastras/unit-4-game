@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Crystal Collector</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/reset.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="Pseudo.js"></script>
@@ -14,8 +15,7 @@
     </head>
 
     <body>
-        <div class="jumbotron"> 
-            
+        <div class="jumbotron">  
             <div id= "header" class="row">
                 <div class="col-12">
                     <header><h2>Crystals Collector</h2></header>
@@ -34,33 +34,6 @@
                     <p>Each time when the game starts, the game will change the values of each crystal.</p>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="crystal-images">
-                        <img src="assets/images/Tanzanite.jpeg" id="crystal1" value="" style="width:200px" height="200px">
-                        <h3>Crystal 1</h3>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="crystal-images">                        
-                        <img src="assets/images/Diamond.jpeg" id="crystal2" value="" style="width:200px" height="200px">
-                        <h3>Crystal 2</h3>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="crystal-images">                        
-                        <img src="assets/images/Ruby.jpg" id="crystal3" value="" style="width:200px" height="200px">
-                        <h3>Crystal 3</h3>
-                    </div>
-                    </div>      
-                <div class="col-sm-3">
-                    <div class="crystal-images">  
-                    <img src="assets/images/Amethyst.jpeg" id="crystal4" value="" style="width:200px" height="200px">
-                    <h3>Crystal 4</h3>
-                </div>
-            </div>
             <div class= "container">
                 <div class="row">
                     <div class="col-md-12">
@@ -68,30 +41,59 @@
                         <div id="wantedScore"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div>Your Score: </div>
-                        <div id="yourScore"></div>
-                    </div>
-                </div>    
             </div>
             <div class= "container-aside">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>Wins:</div>
+                            <div id="wins"></div>
+                        </div>
+                        <div class="col-6">
+                            <div>Loses:</div>
+                            <div id="loses"></div>
+                        </div>
+                    </div>    
+                </div>
                 <div class="row">
-                    <div class="col-6">
-                        <div>Wins:</div>
-                        <div id="wins"></div>
+                    <div class="col-sm-3">
+                        <div class="crystal-images">
+                            <img src="assets/images/Tanzanite.jpeg" id="crystal1" value="" style="width:200px" height="200px">
+                            <h3>Crystal 1</h3>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <div>Loses:</div>
-                        <div id="loses"></div>
+                    <div class="col-sm-3">
+                        <div class="crystal-images">                        
+                            <img src="assets/images/Diamond.jpeg" id="crystal2" value="" style="width:200px" height="200px">
+                            <h3>Crystal 2</h3>
+                        </div>
                     </div>
-                </div>    
+                    <div class="col-sm-3">
+                        <div class="crystal-images">                        
+                            <img src="assets/images/Ruby.jpg" id="crystal3" value="" style="width:200px" height="200px">
+                            <h3>Crystal 3</h3>
+                        </div>
+                        </div>      
+                    <div class="col-sm-3">
+                        <div class="crystal-images">  
+                        <img src="assets/images/Amethyst.jpeg" id="crystal4" value="" style="width:200px" height="200px">
+                        <h3>Crystal 4</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>Your Score: </div>
+                            <div id="yourScore"></div>
+                        </div>
+                    </div>    
+                </div>
             </div>
-        </div>
-        <footer>
-            <div class="container">
-                Copyright &copy; 
             </div>
-        </footer>
+            <footer>
+                <div class="footer">
+                    Copyright &copy; 
+                </div>
+            </footer>
+        </div>    
     </body>
 </html>

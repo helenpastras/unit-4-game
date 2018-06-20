@@ -61,22 +61,25 @@ function onStart() {
   $("#wantedScore").text($wantedScore);
   yourScore = 0;
 }
+// The player wins if their total score matches the random number from the beginning of the game.
+if (yourScore === wantedScore) {
+    alert("You win!");
 
+  }
+  
+// The player loses if their score goes above the random number.
+  else if (yourScore >= wantedScore) {
+    alert("You lose!!");
+  }
 
 onStart();
 });
 
-// The player wins if their total score matches the random number from the beginning of the game.
-if (counter === targetNumber) {
-    alert("You win!");
-  }
-  
-// The player loses if their score goes above the random number.
-  else if (counter >= targetNumber) {
-    alert("You lose!!");
-  }
 
 
+
+document.getElementById("wins").innerHTML = "Wins: " + wins;
+document.getElementById("loses").innerHTML = "Loses: " + loses;
 
 // The game restarts whenever the player wins or loses.
 
