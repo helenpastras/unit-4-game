@@ -59,17 +59,27 @@ function onStart() {
   yourScore = 0;
 }
 
-
 onStart();
-});
 
-// The player wins if their total score matches the random number from the beginning of the game.
-if (counter === targetNumber) {
+if (yourScore === wantedScore) {
     alert("You win!");
+
   }
   
 // The player loses if their score goes above the random number.
-  else if (counter >= targetNumber) {
+  else {
+    alert("You lose!!");
+  }
+});
+
+// The player wins if their total score matches the random number from the beginning of the game.
+if (yourScore === wantedScore) {
+    alert("You win!");
+
+  }
+  
+// The player loses if their score goes above the random number.
+  else {
     alert("You lose!!");
   }
 

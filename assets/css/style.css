@@ -5,20 +5,27 @@ body {
 .header {
     box-sizing: border-box;
     padding: 10px;
+    width: 40%;
     background-color: rgb(190, 82, 10);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-stretch: condensed;
 }
 
 .instructions {
     box-sizing: border-box;
-    height: 500px;
-    width: 50%;
+    height: 600px;
+    width: 40%;
     background-color: #FAE3C6;
     margin-top: 20px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: justify; 
+    color: green;
+    font-weight: bold;
 }
 
 .instructions div {
@@ -28,27 +35,42 @@ body {
 #container {
     padding-top: 20px;
     overflow: auto;
-    background-color: turquoise;
+    background-color: green;
     font-size: 20px;
 }
 
 #container-aside {
     padding-top: 20px;
     width: 200px;
-    height: 200px;
-    background-color: green;
+    background-color: turquoise;
     font-size: 20px;
+  
 }
 #wantedScore{
     font-weight: bold;
     font-size: 30px;
 }
-/* .crystals {
-    width: 150px;
-    height: 150px;
-    margin: 15px; 
-} */
 
+.images {
+    padding: auto;
+}
+
+.score {
+    padding-top: 20px;
+    white-space: nowrap;
+    width: 30%;
+    background-color: green;
+    font-size: 20px;
+}
+
+#yourScore {
+    padding-top: 20px;
+    width: 30%;
+    white-space: nowrap;
+    background-color: green;
+    font-weight: bold;
+    font-size: 30px;
+}
 
 /* .container
 #wantedScore
