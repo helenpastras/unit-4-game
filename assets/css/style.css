@@ -57,6 +57,7 @@ body {
 
 .score {
     padding-top: 20px;
+    margin-bottom: 10px;
     white-space: nowrap;
     width: 30%;
     background-color: green;
@@ -65,6 +66,7 @@ body {
 
 #yourScore {
     padding-top: 20px;
+    margin-top: 10px;
     width: 30%;
     white-space: nowrap;
     background-color: green;

@@ -20,12 +20,6 @@ $(document).ready(function() {
     $wantedScore = $("#wantedScore");
     $yourScore = $("#yourScore");
 
-// The player will be shown a random number at the start of the game.
-var targetNumber = 53;
-
-  $("#number-to-guess").text(targetNumber);
-  var targetNumber = Math.floor((Math.random() * 120) + 1);
-  
 // When the player clicks on a crystal, 
 var randomNumber1 = Math.floor((Math.random() * 12) + 1);
 var randomNumber2 = Math.floor((Math.random() * 12) + 1);
@@ -55,34 +49,51 @@ $crystalButton4.on("click", function() {
 
 // Your game will hide this amount until the player clicks a crystal.
 
+// The player wins if their total score matches the random number from the beginning of the game.
+
 // When they do click one, update the player's score counter.
 function onStart() {  
   $wantedScore = Math.floor((Math.random() * 120) + 19);
   $("#wantedScore").text($wantedScore);
   yourScore = 0;
-}
-// The player wins if their total score matches the random number from the beginning of the game.
-if (yourScore === wantedScore) {
-    alert("You win!");
 
-  }
-  
-// The player loses if their score goes above the random number.
-  else if (yourScore >= wantedScore) {
-    alert("You lose!!");
-  }
+}
 
 onStart();
+
 });
+function game() {
+    $("#wins").text("Wins: " + wins)
+    $("#loses").text("Loses: ")
+
+    $("")
+
+    if ($yourScore == $wantedScore) {
+
+        console.log("win");
+        wins ++;
+    
+    }
+    
+    // The player loses if their score goes above the random number.
+    else {
+        console.log("lose");
+        loses ++;
+      }
+}
+game();
 
 
-
-
-document.getElementById("wins").innerHTML = "Wins: " + wins;
-document.getElementById("loses").innerHTML = "Loses: " + loses;
+// document.getElementById("wins").innerHTML = "Wins: " + wins;
+// document.getElementById("loses").innerHTML = "Loses: " + loses;
 
 // The game restarts whenever the player wins or loses.
 
 
 // When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, 
 // the user's score (and score counter) will reset to zero
+function reset(){
+    $wantedScore = Math.floor((Math.random() * 120) + 19);
+    $("#wantedScore").text($wantedScore);
+    console.log(wantedScore);
+}

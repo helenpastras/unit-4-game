@@ -58,11 +58,9 @@ function onStart() {
   $("#wantedScore").text($wantedScore);
   yourScore = 0;
 }
-
-onStart();
-
-if (yourScore === wantedScore) {
+if (yourScore === $wantedScore) {
     alert("You win!");
+    
 
   }
   
@@ -72,16 +70,19 @@ if (yourScore === wantedScore) {
   }
 });
 
-// The player wins if their total score matches the random number from the beginning of the game.
-if (yourScore === wantedScore) {
-    alert("You win!");
+onStart();
 
-  }
+
+// The player wins if their total score matches the random number from the beginning of the game.
+// if (yourScore === wantedScore) {
+//     alert("You win!");
+
+//   }
   
 // The player loses if their score goes above the random number.
-  else {
-    alert("You lose!!");
-  }
+//   else {
+//     alert("You lose!!");
+//   }
 
 
 
